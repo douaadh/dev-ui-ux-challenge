@@ -1,0 +1,435 @@
+ 
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap')
+
+ /**party 1**/
+ *{
+    margin: 0;
+    padding: 0
+    
+
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.hed{
+    size: 20px;
+    height: 20px;
+    width: 20px;
+    justify-content: left;
+
+}
+
+.header-1{
+    background-image: url('victor-freitas-WvDYdXDzkhs-unsplash\ \(1\).jpg');
+    background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   width: 100%;
+}
+
+header {
+
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: right;
+}
+
+header ul {
+    list-style-type: none;
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+   
+    
+}
+.hed{
+   font-size: smaller;
+
+}
+header li {
+    font-size: large;
+    margin: 0 10px;
+  
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+button{
+    padding: 10px 20px;
+    background-color: #FF6B00;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.container{
+    text-align: center;
+    position: absolute;
+    top: 35%;
+font-size: 30px;
+color: whitesmoke;
+}
+.orange{
+    color:#FF6B00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**party 2**/
+
+
+
+h2{
+    color: #FF6B00;
+    
+}
+
+
+.choosing{
+    height: 100vh;
+    width: 100%;
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+}
+
+
+.card {
+  
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom:3px;
+}
+
+.card-content a {
+    display: flex;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-content a:hover {
+    text-decoration: dotted;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**party 3**/
+
+.services{
+    height: 100vh;
+    width: 100%;
+    background-color:#302E2E;
+    background-size:10px 100px;
+   
+}
+.imgser{
+ display: flex;
+ justify-content:space-around ;
+ background-color: #302E2E;
+ width: 100%;
+ height: 100%;
+
+}
+.card{
+    background-color: #fff;
+    width: 220px;
+    height: 400px;
+    
+
+
+}
+.card-img{
+    
+    height: 400px;
+margin-bottom: 15px;
+background-size: cover;
+}
+.car-1{
+    background-image: url(icon/photo/pexels-jonathan-borba-3076511.jpg);
+} 
+.car-2{
+    background-image: url(icon/photo/pexels-alexy-almond-3758151\ \(1\).jpg);
+}
+.car-3{
+    background-image:url(icon/photo/pexels-gleb-krasnoborov-2628206.jpg) ;
+} 
+.car-4{
+    background-image: url(icon/photo/pexels-andrea-piacquadio-3837757.jpg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**page 4**/
+ 
+
+.section2{
+  width: 100%;
+  background-color: #302E2E;
+}
+.section2 .title{
+  width: 100%;
+  margin: auto;
+}
+.section2 .title .EXPERT{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  
+}
+.section2 .title .EXPERT h1{
+  padding-top: 30px;
+  font-size: 45px;
+  color: #FF6B00;
+} 
+.card2{
+  display: grid;
+  justify-content: sp ;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+.card2 .icon8{
+  
+  display: flex;
+  justify-content:space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /**another page**/
+
+ .pricing {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .plan {
+    width: calc(30% - 20px); /* Adjust as necessary for responsiveness */
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /**another page**/
+  
+
+  
+  
+  
+
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .container8 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
