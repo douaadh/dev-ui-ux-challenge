@@ -1,24 +1,24 @@
- 
 
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap')
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
  /**party 1**/
  *{
     margin: 0;
-    padding: 0
-    
-
-}
+    padding: 0;  
+  }
 body{
     font-family: "Montserrat", sans-serif;
 }
-.hed{
-    size: 20px;
-    height: 20px;
-    width: 20px;
-    justify-content: left;
 
-}
 
 .header-1{
     background-image: url('victor-freitas-WvDYdXDzkhs-unsplash\ \(1\).jpg');
@@ -42,37 +42,63 @@ header ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
    
     
 }
-.hed{
-   font-size: smaller;
 
-}
+
 header li {
     font-size: large;
     margin: 0 10px;
+    padding-left: 20px;
   
 }
 
 header a {
     color: #fff;
     text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    
+    left: -70px;
 }
+header a ::after {
+  content: "";
+  position: absolute;
+  
+  height: 3px;
+ 
+  background-color: #FF6B00;
+  width: 0;
+  left: 0;
+  bottom:-10px;
+
+transition:0.3s;}
+header a:hover::after{
+  width: 100%;
+
+
+}
+
 button{
     padding: 10px 20px;
     background-color: #FF6B00;
     border-radius: 30px;
     color: whitesmoke;
+    
 }
 
 .container{
     text-align: center;
     position: absolute;
-    top: 35%;
+    top: 40%;
+    left: 3%;
 font-size: 30px;
 color: whitesmoke;
+
+
 }
 .orange{
     color:#FF6B00;
@@ -110,30 +136,50 @@ color: whitesmoke;
 
 h2{
     color: #FF6B00;
+    padding-top: 70px;
     
+}
+span{
+  color: #302E2E;
 }
 
 
 .choosing{
-    height: 100vh;
     width: 100%;
-     display: flex;
-     justify-content:space-around;
-     align-items: center;
+    height: fit-content;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    gap: 20px 20px;
 }
 
 
-.card {
-  
+.choosing .card {
     border: 1px solid #ccc;
     border-radius: 8px;
-    margin: 5px;
+    position: initial;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
-    width: 50%;
-    height: auto;
+.choosing .card img {
+    width: 100px;
+    height: 100px;
+    
+    
+    border-radius:50%  ;
+    border: 4px solid #FF6B00;
+   position: relative;
+   top: 50px;
+  
+  
+   
 }
 
 .card-content {
@@ -141,17 +187,28 @@ h2{
 }
 
 .card-content h2 {
-    margin-top: 0;
+    margin-top: 0px;
+    text-align: center;
+    position: relative;
+    top: -30px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 25px;
+   
+    
 }
 
 .card-content p {
     margin-bottom:3px;
+    position: relative;
+    top: -20px;
+    font-size: larger;
 }
 
 .card-content a {
     display: flex;
     text-align: center;
     color: #007bff;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -177,53 +234,92 @@ h2{
 
 /**party 3**/
 
+
+@media screen and (max-width: 768px) {
+  .service {
+    width: 90%; /* Adjust for smaller screens */
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+
 .services{
-    height: 100vh;
-    width: 100%;
-    background-color:#302E2E;
-    background-size:10px 100px;
-   
+  height: 100vh;
+  width: 100%;
+  background-color:#302E2E;
+  background-size:10px 100px;
+ 
 }
-.imgser{
- display: flex;
- justify-content:space-around ;
- background-color: #302E2E;
- width: 100%;
- height: 100%;
 
+.Services {
+background-color: #302E2E;
+padding: 50px 20px;
 }
+.Services .p1{
+font-size: 30px;
+text-align: center;
+font-weight: bold;
+color: white;
+}
+
+.Services .h1{
+text-align: center;
+font-weight: bold;
+padding-bottom: 30px;
+color: #FF6B00;
+font-size: 40px;
+}
+
+
+
+
+.Services .imgser{
+width:100%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+justify-items: center;  
+margin: auto;
+justify-content: center;
+}
+
+
 .card{
-    background-color: #fff;
-    width: 220px;
-    height: 400px;
-    
+  background-color: #fff;
+  width: 400px;
+  position: relative;
+
+}
 
 
+.Services .card h3{
+position: absolute;
+top: 80%;
+left: 40%;
+width: 100%;
+text-align: center;
+font-size: 35px;
+color: #FF6B00;
+transform: translate(-50% ,-50%);
 }
 .card-img{
-    
-    height: 400px;
-margin-bottom: 15px;
-background-size: cover;
+  height: 600px;
+  background-size: cover;
 }
 .car-1{
-    background-image: url(icon/photo/pexels-jonathan-borba-3076511.jpg);
+  background-image: url(icon/photo/pexels-jonathan-borba-3076511.jpg);
 } 
 .car-2{
-    background-image: url(icon/photo/pexels-alexy-almond-3758151\ \(1\).jpg);
+  background-image: url(icon/photo/pexels-alexy-almond-3758151\ \(1\).jpg);
 }
 .car-3{
-    background-image:url(icon/photo/pexels-gleb-krasnoborov-2628206.jpg) ;
+  background-image:url(icon/photo/pexels-gleb-krasnoborov-2628206.jpg) ;
 } 
 .car-4{
-    background-image: url(icon/photo/pexels-andrea-piacquadio-3837757.jpg);
+  background-image: url(icon/photo/pexels-andrea-piacquadio-3837757.jpg);
 
 }
-
-
-
-
-
 
 
 
@@ -256,6 +352,20 @@ background-size: cover;
   width: 100%;
   margin: auto;
 }
+.section2 .title .cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  grid-template-rows: auto;
+ justify-items: center;
+ gap: 20px;
+  padding: 40px 0;
+}
+
+.section2 .title .cards .card2{
+  width: 260px;
+  background-color: white;
+}
 .section2 .title .EXPERT{
   width: 60%;
   text-align: center;
@@ -263,21 +373,27 @@ background-size: cover;
   
 }
 .section2 .title .EXPERT h1{
-  padding-top: 30px;
-  font-size: 45px;
+  padding-top: 20px;
+  font-size: 35px;
   color: #FF6B00;
+
 } 
-.card2{
-  display: grid;
-  justify-content: sp ;
-  flex-direction: row;
-  align-items: center;
-  margin: auto;
+.section2 .title .EXPERT h1 span{
+  color: rgb(247, 247, 247);
 }
+
 .card2 .icon8{
   
   display: flex;
-  justify-content:space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.card2 .icon8 h2{
+  position: relative;
+  top: -30px;
+}
+.card2 .icon8 img{
+  width: 100%;
 }
 
 
@@ -318,6 +434,10 @@ background-size: cover;
     background-color: #f9f9f9;
     padding: 50px 0;
   }
+  .pricing H2{
+    text-align: center;
+   
+  }
   
   .container3 {
     display: flex;
@@ -325,6 +445,7 @@ background-size: cover;
     justify-content: space-around;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 40px;
   }
   
   .plan {
@@ -333,69 +454,96 @@ background-size: cover;
     background-color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
+     outline: #FF6B00;
+  }
+  .plan h2{
+   padding: 30px;
   }
   
 
   .price {
     font-size: 20px;
     font-weight: bold;
+    
   }
   
   ul {
     list-style-type: none;
     padding: 0;
+    
   }
   
   ul li {
     margin-bottom: 10px;
+    position: relative;
+    left: 40px;
+    
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+
+    
+  }
+
+   .true img{
+    width: 0.5px;
+    height: 0.5px;
+  }
+
+  
+  
+  /**another page**/
+  .contact2{
+    height: 40%;
+  }
+  .contact2 h2{
+    text-align: center;
+    padding-top: 20px;
+  }
+  .contact-info{
+display: flex;
+justify-content: space-around;
+padding-top: 20px;
   }
   
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  /**another page**/
   
+.contact-info h2{
+text-align: center;
+}
+.contact-info .cont{
+  display: flex;
+  justify-content: spac;
+}
 
-  
-  
-  
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /**another page**/
+ 
+ 
   .footer {
     background-color: #333;
     color: #fff;
     padding: 50px 0;
+    padding-top: 30px;
   }
   
   .container8 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-top: 30px;
   }
   
   .footer-content {
@@ -404,14 +552,25 @@ background-size: cover;
     flex-wrap: wrap;
   }
   
+  
   .footer-column {
     flex: 1;
     margin-bottom: 20px;
+  }
+  .footer-column p img{
+   color: white;
+   max: width 2px;
+   max-height: 3px
+   size: smaller;
   }
   
   .footer-column h3 {
     font-size: 20px;
     margin-bottom: 10px;
+  }
+  .footer-column img{
+    width: 300px;
+    height: 250px;
   }
   
   .footer-column ul {
@@ -432,4 +591,3 @@ background-size: cover;
     text-align: center;
     margin-top: 30px;
   }
-  
